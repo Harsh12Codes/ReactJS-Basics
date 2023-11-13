@@ -1,13 +1,81 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Noto+Sans+Osmanya&family=Open+Sans&family=Poppins&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    font-family: 'Lato';
+    background:#F2FFE9 ;
+    color: #222;
+}
+
+.book-list {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 3rem auto;
+    display: grid;
+    gap: 2rem;
+  }
+  
+@media screen and (min-width: 768px) {
+  .book-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.book {
+  background: #A6CF98;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.book img {
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 250px;
+  object-fit: cover;
+  transition:linear 0.2s;
+}
+
+.book img:hover{
+  scale: 1.08;
+}
+.book h2 {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.book h4 {
+  color: #617d98;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.number {
+  position:absolute;
+  top: 0%;
+  left: 0%;
+  padding: 0.75rem;
+  background-color: #FA7070;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  font-size: 1rem;
+}
+
+#main-title {
+  color: #557C55;
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1rem 0;
 }
