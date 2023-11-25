@@ -1,4 +1,4 @@
-import Starter from "./tutorial/06-forms/starter/02-user-challenge";
+import Starter from "./tutorial/11-performance/starter/02-lower-state-challenge";
 
 function App() {
   return (
